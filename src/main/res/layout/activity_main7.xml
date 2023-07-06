@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gridiant"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity5">
+    <include
+        android:id="@+id/include"
+        layout="@layout/toto" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="296dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circular" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="294dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/butonstyle"
+        android:gravity="center"
+        android:text="كتب ومراجع "
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shapeableImageView" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/shapeableImageView3"
+        android:layout_width="289dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/noor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        app:shapeAppearanceOverlay="@style/circular" />
+
+    <TextView
+
+        android:layout_width="282dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/butonstyle"
+        android:gravity="center"
+        android:text="معلومات قانونية"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
